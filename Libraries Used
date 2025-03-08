@@ -1,0 +1,65 @@
+Libraries Used
+
+1. Pandas (pandas)
+
+Used for data manipulation and handling tabular data.
+
+Functions used:
+
+pd.DataFrame(): Creates a DataFrame from generated data.
+
+2. Matplotlib (matplotlib.pyplot)
+
+Used for plotting graphs and visualizing data.
+
+Functions used:
+
+plt.show(): Displays the plots.
+
+3. Seaborn (seaborn)
+
+Used for advanced visualization, including regression plots.
+
+Functions used:
+
+sns.regplot(): Creates a regression plot.
+
+sns.displot(): Plots the distribution of data with KDE.
+
+4. Scikit-Learn (sklearn)
+
+Used for generating synthetic data, feature scaling, model building, and evaluation.
+
+Functions used:
+
+sklearn.datasets.make_regression(): Generates a synthetic dataset for regression.
+
+sklearn.preprocessing.MinMaxScaler(): Normalizes features to a range of [0,1].
+
+sklearn.model_selection.train_test_split(): Splits data into training and testing sets.
+
+sklearn.linear_model.LinearRegression(): Builds the linear regression model.
+
+sklearn.metrics.r2_score(): Evaluates the model’s performance.
+
+Implementation Steps
+
+Generate a regression dataset with 1000 samples, 5 features, and 1 target variable using make_regression().
+
+Create a DataFrame using pandas and add the target variable.
+
+Check feature correlation using df.corr().
+
+Normalize the dataset using MinMaxScaler().
+
+Visualize feature relationships with sns.regplot().
+
+Split data into train-test sets using train_test_split().
+
+Train a linear regression model using LinearRegression().fit().
+
+Make predictions on training and testing data.
+
+Evaluate model performance using r2_score().
+
+Plot prediction distributions using sns.displot().
