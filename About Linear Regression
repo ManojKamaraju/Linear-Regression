@@ -1,0 +1,70 @@
+Linear Regression
+
+Linear regression is a fundamental statistical and machine learning technique used to model the relationship between a dependent variable (target) and one or more independent variables (features). It assumes a linear relationship between input and output.
+
+1. Types of Linear Regression
+
+A. Simple Linear Regression
+
+Models the relationship between one independent variable (X) and one dependent variable (Y).
+
+The equation is:
+
+Y = mX + b
+
+where:
+
+Y = predicted output (dependent variable)
+
+X = input feature (independent variable)
+
+m = slope (coefficient)
+
+b = intercept (bias)
+
+B. Multiple Linear Regression
+
+Involves multiple independent variables.
+
+The equation becomes:
+
+Y = b0 + b1X1 + b2X2 + ... + bnXn
+
+where:
+
+Y = target variable
+
+X1, X2, ..., Xn = feature variables
+
+b0 = intercept
+
+b1, b2, ..., bn = coefficients (weights)
+
+2. How Linear Regression Works
+
+Fitting a Line: Finds the best-fitting line that minimizes the error between actual and predicted values.
+
+Using the Least Squares Method: Calculates the best coefficients (m, b) by minimizing the sum of squared errors.
+
+Error = Σ (Y_actual - Y_predicted)^2
+
+Making Predictions: Once trained, it predicts Y for a given X.
+
+3. Evaluation Metrics
+
+To check the model’s accuracy, we use:
+
+Mean Squared Error (MSE)
+
+MSE = (1/n) Σ (Y_actual - Y_predicted)^2
+
+Root Mean Squared Error (RMSE)
+
+RMSE = sqrt(MSE)
+
+R² Score (Coefficient of Determination)
+
+Measures how well the model explains variability.
+
+Ranges from 0 to 1, where 1 means perfect prediction.
+
